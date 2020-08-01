@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <style>
+        .icons{
+            height:58vh;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .icons a{
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+            background-color:#f5f6fa;
+            box-shadow: 1px 4px 2px 2px #c8d6e5;
+            margin:30px;
+            text-align: center;
+            line-height: 125px;
+        }
+        .icons a i{
+            transition: all 0.3s linear;
+        }
+        .icons a:hover i{
+            transform: scale(1.4);
+        }
+
+        .fa-instagram{
+            color:#E1306C;
+        }
+
+        .fa-whatsapp{
+            color:#075e54;
+        }
+
+        .fa-facebook{
+            color:#3b5998
+        }
+    </style>
+</head>
+<body>
+
+     <!-----------------NAVBAR-------->
+     <nav class="blue lighten-1">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo" style="text-shadow: 2px 2px 3px black;">The BadAss Force</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="players.html" >Players</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign Up</a>
+          </ul>
+        </div>
+      </nav>
+     
+      
+      <h1 class="center-align blue-text" style="text-shadow: 2px 2px 3px black;">Contact Us</h1>
+
+    <div class="row">
+        <div class="col s4 l4 m4 offset-l4"> <hr></div>
+    </div>
+    <h4 class="center-align" style="color: #ee5253; font-weight: bold;">Click The Below Links To Contact Me.</h4>
+
+
+
+    <div class="icons">
+        <a href=""><i class="fab fa-3x fa-facebook"></i></a>
+        <a href=""><i class="fab fa-3x fa-instagram"></i></a>
+        <a href=""><i class="fab fa-3x fa-whatsapp"></i></a>
+        <a href=""><i class="fab fa-3x fa-linkedin"></i></a>
+
+    </div>
+
+
+
+
+    <footer class="page-footer blue">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Akash WebDesigns</h5>
+              <p class="grey-text text-lighten-4">This is a small website designed by Akash.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Social Media Handles</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/_akash2910_/" target="_blank">Instagram</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/Akash.gupta36" target=_blank>Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/akash-gupta-372541bb/" target="_blank">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright red">
+          <div class="container">
+          <h5 class="center-align">© 2020 Akash WebDesigns</h5>
+          </div>
+        </div>
+      </footer> 
+    
+       <!-- Modal Structure -->
+     <div id="modal1" class="modal">
+      <div class="modal-content">
+       <div class="row">
+         <form class="col s12">
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="first_name" type="text" class="validate">
+               <label for="first_name">First Name</label>
+             </div>
+             <div class="input-field col s6">
+               <input id="last_name" type="text" class="validate">
+               <label for="last_name">Last Name</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12">
+               <input id="password" type="password" class="validate">
+               <label for="password">Password</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12">
+               <input id="email" type="email" class="validate">
+               <label for="email">Email</label>
+             </div>
+           </div> 
+           <div>
+             <a class="waves-effect waves-light btn-large center-align" onclick="M.toast({html: 'Signed Up Successfully!'})"><i class="material-icons left">send</i>Sign Up</a>
+         </div>
+         </form>
+       </div>
+      
+    </div>
+    
+    
+
+    <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.modal').modal();
+        });
+      </script>  
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
